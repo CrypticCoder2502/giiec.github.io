@@ -16,11 +16,34 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
+	
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Audiowide|Arvo|Exo|Kanit|Raleway" rel="stylesheet">
 	<style>
 body {
     font-family: "Lato", sans-serif;
     transition: background-color .5s;
 }
+					
+		.blinking{
+    animation:blinkingText 1.5s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #fff;    }
+    49%{    color: #D23333; }
+    50%{    color: #D23333; }
+    99%{    color: #fff;  }
+    100%{   color: #fff;    }
+}
+.blinking1{
+    animation:blinkingText1 1.5s infinite;
+	}
+	@keyframes blinkingText1{
+    0%{     color: #000;    }
+    49%{    color: #D23333; }
+    50%{    color: #D23333; }
+    99%{    color: #000;  }
+    100%{   color: #000;    }
+} 
 #grad1 {
     height: 200px;
     background-color: red; /* For browsers that do not support gradients */
@@ -253,17 +276,11 @@ button:hover, a:hover {
                                     <li><a href="index.html#archives"> Archives</a></li>
                                     <li><a href="index.html#upcoming">Upcoming Events</a></li>
 									<li><a href="team.html">The Team</a></li>
+									<li><a href="index.html#register"><span class="blinking">E-Summit Register</span></a></li>
                                     <li><a href="index.html#contact">Contact</a></li>
                                 </ul>
 
-                                <!-- Login/Register & Cart Button -->
-                                <div class="login-register-cart-button d-flex align-items-center">
-                                    <!-- Login/Register -->
-                                    <div class="login-register-btn mr-50">
-                                        <a href="#" id="loginBtn"> Register</a>
-                                    </div>
-
-                                    
+                                                                  
                                 </div>
                             </div>
                             <!-- Nav End -->
@@ -286,6 +303,8 @@ button:hover, a:hover {
     </section>
     <!-- ##### Breadcumb Area End ##### -->
 
+	</a></li><marquee behavior="scroll" direction="left"><a href="index.html#register"><font size="5" style="font-family: 'Raleway', sans-serif;"><span class="blinking1"><u>E- Summit 2019 registrations have begun.... Hurry Up!!! Click here to Pre- Register..</u></span></a></font></marquee>
+	
     <!-- ##### Contact Area Start ##### -->
     <section class="contact-area section-padding-100-0">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
